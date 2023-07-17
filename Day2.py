@@ -90,7 +90,7 @@ two_dimensional_array(dimensions)
 
 '''
 Question 8:
-Write a program that accepts a comma separated sequence of words as input and 
+Write a program that accepts a comma separated sequence of words as input and
 prints the words in a comma-separated sequence after sorting them alphabetically.
 '''
 
@@ -108,3 +108,17 @@ Question 9:
 Write a program that accepts sequence of lines as input and prints 
 the lines after making all characters in the sentence capitalized.
 '''
+
+
+def capitalizing_lines():
+    list_of_strings = []
+    while True:
+        input_lines = input().upper()
+        if input_lines == '':
+            break
+        list_of_strings.append(input_lines)
+    return list_of_strings
+
+
+for cap_lines in capitalizing_lines():
+    print(cap_lines)
