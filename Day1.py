@@ -22,15 +22,15 @@ Suppose the following input is supplied to the program: 8 Then, the output shoul
 '''
 
 
-def factorial(num):
+def factorial():
+    num = int(input("\nwrite a number: "))
     fact = 1
     for i in range(1, num + 1):
         fact *= i
     print(fact)
 
 
-given_number1 = int(input("\nenter a number: "))
-factorial(given_number1)
+factorial()
 
 '''
 Question 3:
@@ -40,12 +40,12 @@ and then the program should print the dictionary
 '''
 
 
-def numbers_dictionary(num):
+def numbers_dictionary():
+    num = int(input("write a number: "))
     dictionary = {}
     for i in range(1, num + 1):
         dictionary[i] = i * i
     print(dictionary)
 
 
-given_number2 = int(input("enter a number: "))
-numbers_dictionary(given_number2)
+numbers_dictionary()

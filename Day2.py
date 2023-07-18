@@ -7,15 +7,14 @@ from console and generate a list and a tuple which contains every number
 '''
 
 
-def generate_list_tuple(csn):
-    numbers_list = csn.split(',')
+def generate_list_tuple():
+    numbers_list = input().split(',')
     numbers_tuple = tuple(numbers_list)
     print(numbers_list)
     print(numbers_tuple)
 
 
-comma_separated_input = input()
-generate_list_tuple(comma_separated_input)
+generate_list_tuple()
 
 '''
 Question 5:
@@ -55,17 +54,15 @@ D is the variable whose values should be input to your program in a comma-separa
 '''
 
 
-def calculate_sqrt(csn):
+def calculate_sqrt():
     c = 50
     h = 30
-    for d in csn.split(','):
+    for d in input().split(','):
         answer = sqrt((2 * c * int(d)) / h)
         print(round(answer), end=',')
 
 
-cs_input = input()
-
-calculate_sqrt(cs_input)
+calculate_sqrt()
 
 '''
 Question 7:
@@ -76,17 +73,17 @@ Note: i=0,1.., X-1; j=0,1,¡Y-1. Suppose the following inputs are given to the p
 '''
 
 
-def two_dimensional_array(li):
+def two_dimensional_array():
+    dimensions = input('\n').split(',')
     array = []
-    for i in range(int(li[0])):
+    for i in range(int(dimensions[0])):
         array.append([])
-        for j in range(int(li[1])):
+        for j in range(int(dimensions[1])):
             array[i].append(i * j)
     print(array)
 
 
-dimensions = input().split(',')
-two_dimensional_array(dimensions)
+two_dimensional_array()
 
 '''
 Question 8:
@@ -95,13 +92,13 @@ prints the words in a comma-separated sequence after sorting them alphabetically
 '''
 
 
-def string_sorting(str_list):
+def string_sorting():
+    str_list = input()
     sorted_list = sorted(str_list.split(','))
     print(','.join(sorted_list))
 
 
-strings = input()
-string_sorting(strings)
+string_sorting()
 
 '''
 Question 9:

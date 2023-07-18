@@ -22,7 +22,7 @@ The numbers that are divisible by 5 are to be printed in a comma separated seque
 '''
 
 
-def devise_binary():
+def divisible_binary():
     binary_digits = input("enter binary: ").split(',')
     divisible_by_5 = []
     for binary_digit in binary_digits:
@@ -31,7 +31,7 @@ def devise_binary():
     print(','.join(divisible_by_5))
 
 
-devise_binary()
+divisible_binary()
 
 '''
 Question 12:

@@ -22,9 +22,9 @@ Write a program that computes the value of a+aa+aaa+aaaa with a given digit as t
 '''
 
 
-def compute():
+def calculate_number():
     a = input("enter a number: ")
     print(int(a) + int(a * 2) + int(a * 3) + int(a * 4))
 
 
-compute()
+calculate_number()
