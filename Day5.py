@@ -21,14 +21,19 @@ W 200
 D means deposit while W means withdrawal.
 '''
 
-deposit = 0
-withdrawal = 0
-while True:
-    bank_account = input().split(' ')
-    if bank_account[-1] == '':
-        break
-    if bank_account[0] == 'D':
-        deposit += int(bank_account[1])
-    elif bank_account[0] == 'W':
-        withdrawal += int(bank_account[1])
-print(deposit - withdrawal)
+
+def bank():
+    deposit = 0
+    withdrawal = 0
+    while True:
+        bank_account = input().split(' ')
+        if bank_account[-1] == '':
+            break
+        if bank_account[0] == 'D':
+            deposit += int(bank_account[1])
+        elif bank_account[0] == 'W':
+            withdrawal += int(bank_account[1])
+    print(deposit - withdrawal)
+
+
+bank()
