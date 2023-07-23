@@ -59,7 +59,7 @@ Write a program that accepts a sentence and calculate the number of letters and 
 def count_letters_and_digits():
     sentence = input("write a sentence: ")
     letters = len(re.findall(r"([a-zA-Z])", sentence))
-    digits = len(re.findall("\d", sentence))
+    digits = len(re.findall(r"\d", sentence))
 
     print(f"LETTERS {letters}\nDIGITS {digits}")
 
